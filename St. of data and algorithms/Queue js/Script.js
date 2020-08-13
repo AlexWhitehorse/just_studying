@@ -29,7 +29,7 @@ class Queue {
         return this._newestIndex - this._oldestIndex;
     }
 }
-
+/*
 let queue = new Queue();
 
 queue.add("vasia");
@@ -51,3 +51,4 @@ console.log(queue.get()) //Kolia
 console.log(queue._oldestIndex, queue._newestIndex, queue.size(), queue._storage) //4 4 0 {}
 
 console.log(queue.get()) //false
+*/
