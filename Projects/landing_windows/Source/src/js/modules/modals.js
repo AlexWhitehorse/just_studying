@@ -1,4 +1,5 @@
 // import checkEmptyInputs from './checkEmptyInputs';
+import Scroll from './scroll';
 
 const modals = () => {
 
@@ -14,6 +15,7 @@ const modals = () => {
             modal = document.querySelector(modalSelector),
             close = document.querySelector(closeSelector),
             windows = document.querySelectorAll('[data-modal]');
+            
 
         trigger.forEach(item => {
             item.addEventListener('click', (e) => {
@@ -27,6 +29,7 @@ const modals = () => {
 
                 modal.style.display = 'block';
                 document.body.style.overflow = 'hidden';
+                Scroll.hide();
             });
         });
 
@@ -37,7 +40,8 @@ const modals = () => {
 
             modal.style.display = 'none';
             document.body.style.overflow = '';
-            // document.body.classList.remove('modal-open');
+            Scroll.show();
+            
         });
 
         modal.addEventListener('click', (e) => {
@@ -48,7 +52,8 @@ const modals = () => {
 
                 modal.style.display = 'none';
                 document.body.style.overflow = '';
-                // document.body.classList.remove('modal-open');
+                Scroll.show();
+            // document.body.classList.remove('modal-open');
             }
         });
     }
