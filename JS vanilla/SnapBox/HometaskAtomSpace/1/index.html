@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .d-flex {
+            display: flex;
+        }
+        .flex-center {
+            font-size: 100px;
+            font-weight: 800;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .backround{
+            background-color: gray;
+        }
+        .backround > div {
+            height: 2em;
+            width: 2em;
+            margin: 0.15em
+        }
+        .square-white {
+            background-color: white;
+            box-shadow: 0px 14px 13px 1px rgba(0, 0, 0, 0.46), 19px 0px 13px 1px rgba(0, 0, 0, 0.46);
+        }
+        .square-black {
+            background-color: black;
+            box-shadow: 0px 14px 13px 1px rgba(255, 255, 255, 0.46), 19px 0px 13px 1px rgba(255, 255, 255, 0.46);
+            color: white;
+        }
+    </style>
+
+    <div class="backround d-flex">
+        <div class="square-white d-flex flex-center">
+            1
+        </div>
+        <div class="square-black d-flex flex-center">
+            2
+        </div>
+    </div>
+</body>
+</html>
